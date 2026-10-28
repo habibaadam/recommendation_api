@@ -14,7 +14,7 @@ TIMEOUT_S = float(os.getenv("MODEL_TIMEOUT_S", "0.8"))
 
 app = FastAPI(title="kola-lite")
 model = Recommender.load(SNAPSHOT)
-metrics = {"rquests": 0, "fallbacks": 0, "latency_ms_total": 0.0}
+metrics = {"requests": 0, "fallbacks": 0, "latency_ms_total": 0.0}
 
 
 @app.get("/health")

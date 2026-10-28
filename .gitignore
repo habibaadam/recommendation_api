@@ -1,4 +1,4 @@
-.venv
+
 artifacts/*.json
 __pycache__/
 .env
